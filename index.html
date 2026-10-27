@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ben Li | Robotics Software Engineer</title>
     <meta
       name="description"
-      content="Robotics software engineer portfolio for Ben Li, featuring autonomous systems, perception, controls, and embedded software work."
+      content="Selected robotics projects in mobile autonomy, robotic arms, and 3D-printed grippers."
     />
+    <title>Robotics Projects | Selected work</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,207 +18,166 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav">
-        <a href="#top" class="brand" aria-label="Ben Li home">Ben Li</a>
-        <nav class="nav-links" aria-label="Main navigation">
+      <nav class="container nav" aria-label="Main navigation">
+        <a class="brand" href="#about">Portfolio</a>
+        <div class="nav-links">
           <a href="#about">About</a>
-          <a href="#expertise">Expertise</a>
           <a href="#projects">Projects</a>
-          <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Robotics Software Engineer</p>
-            <h1>Building intelligent systems for robots, autonomy, and real-world machines.</h1>
-            <p class="lead">
-              I design and implement sensing, perception, planning, controls, and embedded software
-              for autonomous robots and intelligent mobility systems. My work sits at the intersection
-              of robotics, software engineering, and practical product development.
-            </p>
-            <div class="cta-row">
-              <a class="button primary" href="#projects">View Projects</a>
-              <a class="button secondary" href="resume/Ben_Li_Robotics_Software_Engineer.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-            </div>
-            <ul class="quick-stats" aria-label="Highlights">
-              <li><strong>5+</strong><span>Years</span></li>
-              <li><strong>12</strong><span>Projects</span></li>
-              <li><strong>4</strong><span>Core Domains</span></li>
-            </ul>
-          </div>
-
-          <div class="hero-panel" aria-label="Portfolio snapshot">
-            <img src="assets/profile.svg" alt="Portrait illustration of Ben Li" class="profile-image" />
-            <div class="stat-card">
-              <div class="mini-header">
-                <span>System Overview</span>
-                <span class="status">Active</span>
-              </div>
-              <div class="chart" aria-hidden="true">
-                <span style="height: 38%"></span>
-                <span style="height: 56%"></span>
-                <span style="height: 68%"></span>
-                <span style="height: 84%"></span>
-                <span style="height: 96%"></span>
-              </div>
-              <ul class="system-tags">
-                <li>ROS</li>
-                <li>SLAM</li>
-                <li>Controls</li>
-                <li>Computer Vision</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section">
+    <main>
+      <section id="about" class="content-section about-section" aria-labelledby="about-title">
         <div class="container">
-          <div class="section-heading">
+          <header class="section-heading">
             <p class="eyebrow">About</p>
-            <h2>Engineering dependable robotic intelligence.</h2>
-          </div>
-          <div class="about-grid">
-            <div class="about-card">
-              <p>
-                I focus on building software systems that bring robotic platforms from research concepts
-                to operational reality. My work includes embedded software, mobile autonomy, sensor
-                integration, motion control, and performance validation in constrained environments.
-              </p>
-            </div>
-            <div class="about-card highlight">
-              <p>
-                My goal is to turn real-world complexity into reliable, testable, scalable software.
-                I enjoy solving problems across the full stack—from low-level drivers and perception
-                pipelines to navigation, planning, and user-facing interfaces.
-              </p>
-            </div>
-          </div>
+            <h1 id="about-title">Robotics software, from embedded control to autonomy.</h1>
+          </header>
+          <p class="about-copy">
+            I build software for real-world robotic systems, working across embedded firmware,
+            sensor integration, perception, motion control, and autonomous navigation. I enjoy
+            bringing hardware and software together to create dependable, testable systems.
+          </p>
         </div>
       </section>
 
-      <section id="expertise" class="section alt">
+      <section id="projects" class="content-section projects-section" aria-labelledby="projects-title">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Expertise</p>
-            <h2>Core capabilities</h2>
-          </div>
-          <div class="expertise-grid">
-            <div class="info-card">
-              <h3>Autonomous Systems</h3>
-              <p>Localization, path planning, state estimation, robot behavior design, and deployment workflows.</p>
-            </div>
-            <div class="info-card">
-              <h3>Perception & Sensing</h3>
-              <p>Computer vision, sensor fusion, calibration, and real-time scene understanding for embodied systems.</p>
-            </div>
-            <div class="info-card">
-              <h3>Controls & Motion</h3>
-              <p>Model-based control, trajectory generation, balancing, and actuation optimization for dynamic platforms.</p>
-            </div>
-            <div class="info-card">
-              <h3>Embedded Software</h3>
-              <p>Firmware integration, hardware abstraction, communication stacks, real-time system debugging, and reliability engineering.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section-heading">
+          <header class="section-heading">
             <p class="eyebrow">Projects</p>
-            <h2>Selected work</h2>
-          </div>
+            <h2 id="projects-title">Selected work</h2>
+          </header>
 
           <div class="project-grid">
-            <article class="project-card">
-              <div class="thumb thumb-one"></div>
+            <a
+              class="project-card"
+              href="https://github.com/N-B-Studio/Open-Gripper-mini"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="project-image"
+                src="assets/open-gripper-mini.jpg"
+                alt="3D-printed Open Gripper Mini"
+                loading="lazy"
+                decoding="async"
+              />
               <div class="project-text">
-                <div class="project-meta">
-                  <span>Autonomy</span>
-                  <span>2024</span>
-                </div>
-                <h3>OpenRover Platform</h3>
-                <p>Developed a modular rover stack with perception, navigation, and system integration for field testing.</p>
+                <h2>Open Gripper Mini</h2>
+                <p>A compact, 3D-printable gripper with modular parts for desktop and educational robot arms.</p>
               </div>
-            </article>
+            </a>
 
-            <article class="project-card">
-              <div class="thumb thumb-two"></div>
+            <a
+              class="project-card"
+              href="https://github.com/N-B-Studio/Open-Gripper-Plus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="project-image"
+                src="assets/open-gripper-plus.jpg"
+                alt="Assembled Open-Gripper-Plus prototype"
+                loading="lazy"
+                decoding="async"
+              />
               <div class="project-text">
-                <div class="project-meta">
-                  <span>Mapping</span>
-                  <span>2023</span>
-                </div>
-                <h3>UAV Mapping System</h3>
-                <p>Built a real-time mapping and flight planning workflow for autonomous exploration and data collection.</p>
+                <h2>Open-Gripper-Plus</h2>
+                <p>An open robotic gripper with a cycloidal gear actuator, dual ODrive control, and STM32H723 firmware.</p>
               </div>
-            </article>
+            </a>
 
-            <article class="project-card">
-              <div class="thumb thumb-three"></div>
+            <a
+              class="project-card"
+              href="https://github.com/N-B-Studio/openarm-foc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="project-image"
+                src="assets/openarm-foc-side.jpg"
+                alt="Side view of the OpenArm-FOC robotic arm"
+                loading="lazy"
+                decoding="async"
+              />
               <div class="project-text">
-                <div class="project-meta">
-                  <span>Manipulation</span>
-                  <span>2022</span>
-                </div>
-                <h3>Robot Arm Controller</h3>
-                <p>Focused on motion planning, trajectory control, and robust task execution for precision manipulation.</p>
+                <h2>OpenArm-FOC</h2>
+                <p>An open-source, 3D-printable torque-controlled robotic arm for teleoperation and VLA research.</p>
               </div>
-            </article>
+            </a>
 
-            <article class="project-card">
-              <div class="thumb thumb-four"></div>
+            <a
+              class="project-card"
+              href="https://github.com/N-B-Studio/orca_core"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="project-image"
+                src="assets/orca-core.jpg"
+                alt="SCS225 hardware preview for the Orca Core project"
+                loading="lazy"
+                decoding="async"
+              />
               <div class="project-text">
-                <div class="project-meta">
-                  <span>Dynamics</span>
-                  <span>2021</span>
-                </div>
-                <h3>Balance Bot</h3>
-                <p>Built a self-balancing mobile platform with state estimation, control loops, and embedded tuning.</p>
+                <h2>Orca Core</h2>
+                <p>A Python controller fork for SCS225/ST3215 servos with dual-bus support, calibration, and ROS 2 visualization.</p>
               </div>
-            </article>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://github.com/N-B-Studio/openrover_ros2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="project-image"
+                src="assets/openrover-light-side.jpg"
+                alt="OpenRover Light mobile robotics platform"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="project-text">
+                <h2>OpenRover ROS 2</h2>
+                <p>A modular mobile robotics platform combining STM32 firmware, ROS 2, SLAM, and autonomous navigation.</p>
+              </div>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://github.com/N-B-Studio/5010-3DOF-Foc-kinematic-chain"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="project-image"
+                src="assets/3dof-foc-kinematic-chain.jpg"
+                alt="5010 three-joint FOC kinematic chain and RViz model"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="project-text">
+                <h2>5010 3-DOF FOC Kinematic Chain</h2>
+                <p>A reusable three-joint FOC platform with STM32 control, inverse kinematics, and ROS 2/RViz monitoring.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="resume" class="section resume">
-        <div class="container resume-box">
-          <div>
-            <p class="eyebrow">Resume</p>
-            <h2>Available for robotics, autonomy, and embedded software roles.</h2>
-          </div>
-          <a class="button primary" href="resume/Ben_Li_Robotic_Software_Engineer.pdf" target="_blank" rel="noreferrer">Open Resume</a>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
+      <section id="contact" class="content-section contact-section" aria-labelledby="contact-title">
         <div class="container contact-box">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2>Let’s build the next intelligent system.</h2>
+            <h2 id="contact-title">Let’s build something together.</h2>
+            <p class="contact-copy">For project, collaboration, or career enquiries, reach me at:</p>
           </div>
-          <div class="contact-links">
-            <a class="button secondary" href="mailto:ben.zhuoheng.li@gmail.com">dronnex.info@gmail.com</a>
-            <a class="button primary" href="https://github.com/n-b-studio" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          <a class="email-link" href="mailto:dronnex.info@gmail.com">dronnex.info@gmail.com</a>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Ben Li</p>
-        <p>Robotics • Software • Autonomy</p>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
