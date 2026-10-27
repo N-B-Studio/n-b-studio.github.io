@@ -113,6 +113,24 @@ body {
   line-height: 1.1;
 }
 
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  color: var(--brand);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.view-all-link:hover,
+.view-all-link:focus-visible {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .about-section h1 {
   max-width: 800px;
 }
@@ -131,6 +149,7 @@ body {
 }
 
 .project-card {
+  position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -163,7 +182,8 @@ body {
 }
 
 .project-text {
-  padding: 22px 22px 24px;
+  min-height: 180px;
+  padding: 22px 22px 46px;
 }
 
 .project-text h2 {
@@ -177,6 +197,29 @@ body {
   margin: 0;
   color: var(--muted);
   font-size: 0.94rem;
+}
+
+.project-stars {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.project-stars svg {
+  width: 12px;
+  height: 12px;
+  fill: #f5c451;
+}
+
+.project-stars svg path {
+  fill: #f5c451;
 }
 
 .contact-section {
